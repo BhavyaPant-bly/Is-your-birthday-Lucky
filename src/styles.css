@@ -51,6 +51,10 @@ img {
   padding: 0.5rem 0.5rem;
   color: white;
 }
+.link:hover {
+  color: rgb(179, 211, 221);
+  font-size: large;
+}
 .footer {
   text-align: center;
   padding-bottom: 2rem;

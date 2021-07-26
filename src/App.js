@@ -57,41 +57,45 @@ export default function App() {
       <h1 className="heading">Is Your Birthday Lucky??</h1>
 
       <form onSubmit={CalculateLuckyDate}>
-        <input type="date" onChange={datehandler} required />
-        <h1></h1>
-        <input
-          type="number"
-          placeholder="Enter Your Lucky Number"
-          min="1"
-          required
-          onChange={LuckyNumber}
-        />
+        <h2>
+          Select Your Birth Date:
+          <input type="date" onChange={datehandler} required />
+        </h2>
+        <h2>
+          Enter Lucky Number:
+          <input
+            type="number"
+            placeholder="Enter Your Lucky Number"
+            min="1"
+            required
+            onChange={LuckyNumber}
+          />
+        </h2>
         <h1></h1>
         <input type="submit" value="Check" />
       </form>
       <h1>{message[messageid]}</h1>
       {messageid === 2 ? <img src="/image/sad.svg" alt=":(" /> : null}
       {messageid === 1 ? <img src="/image/party.svg" alt=":)" /> : null}
-      {messageid === 1 || messageid === 2 ? (
-        <div class="footer">
-          @Connect:
-          <a class="link" href="/">
-            instagram
-          </a>
-          <a class="link" href="/">
-            twitter
-          </a>
-          <a class="link" href="/">
-            linkedin
-          </a>
-          <br />
-          <br />
-          <small>
-            Privacy Policy:
-            <br /> We do not store your data. Chillax!!
-          </small>
-        </div>
-      ) : null}
+
+      <div class="footer">
+        @Connect:
+        <a class="link" href="https://www.linkedin.com/in/bhavya-pant09/">
+          Linkedin
+        </a>
+        <a class="link" href="https://github.com/BhavyaPant-bly">
+          Github
+        </a>
+        <a class="link" href="https://www.instagram.com/dodo.8121/">
+          Instagram
+        </a>
+        <br />
+        <br />
+        <small>
+          Privacy Policy:
+          <br /> We do not store your data. Chillax!!
+        </small>
+      </div>
     </div>
   );
 }

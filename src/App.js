@@ -86,7 +86,7 @@ export default function App() {
         <a class="link" href="https://github.com/BhavyaPant-bly">
           Github
         </a>
-        <a class="link" href="https://www.instagram.com/dodo.8121/">
+        <a class="link" href="https://www.instagram.com/bhavya.0.9/">
           Instagram
         </a>
         <br />
